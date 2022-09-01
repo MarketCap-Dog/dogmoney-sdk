@@ -35,7 +35,7 @@ var Rounding;
 })(Rounding || (Rounding = {}));
 
 var FACTORY_ADDRESS = '0xaF85e6eD0Da6f7F5F86F2f5A7d595B1b0F35706C';
-var INIT_CODE_HASH = '0x4eae98fedf0a51d24c5a3a59dddb69e9fbeead94344889e370a14507c35f9b4a';
+var INIT_CODE_HASH = '0x022c5c03794888783ccaeb987cd83b57b6e707f13c06fe761befb20653553b92';
 var MINIMUM_LIQUIDITY = /*#__PURE__*/JSBI.BigInt(1000); // exports for internal consumption
 
 var ZERO = /*#__PURE__*/JSBI.BigInt(0);
@@ -368,7 +368,7 @@ function Currency(decimals, symbol, name) {
  * The only instance of the base class `Currency`.
  */
 
-Currency.ETHER = /*#__PURE__*/new Currency(18, 'BCH', 'Bitcoin Cash');
+Currency.ETHER = /*#__PURE__*/new Currency(18, 'DOGE', 'Dogecoin');
 var ETHER = Currency.ETHER;
 
 var _WETH;
@@ -434,7 +434,7 @@ function currencyEquals(currencyA, currencyB) {
     return currencyA === currencyB;
   }
 }
-var WETH = (_WETH = {}, _WETH[ChainId.MAINNET] = /*#__PURE__*/new Token(ChainId.MAINNET, '0x3743eC0673453E5009310C727Ba4eaF7b3a1cc04', 18, 'WBCH', 'Wrapped BCH'), _WETH);
+var WETH = (_WETH = {}, _WETH[ChainId.MAINNET] = /*#__PURE__*/new Token(ChainId.MAINNET, '0xB7ddC6414bf4F5515b52D8BdD69973Ae205ff101', 18, 'WDOGE', 'Wrapped Doge'), _WETH);
 
 var _toSignificantRoundin, _toFixedRounding;
 var Decimal = /*#__PURE__*/toFormat(_Decimal);
